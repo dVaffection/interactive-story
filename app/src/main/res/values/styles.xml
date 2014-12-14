@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="WhiteButton">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">#FF3AAACA</item>
+    </style>
+
+</resources>

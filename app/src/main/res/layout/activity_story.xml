@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dv.interactivestory.ui.StoryActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyImageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/page0"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start investigate"
+        android:id="@+id/choiceButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/WhiteButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue home to Earth"
+        android:id="@+id/choiceButton1"
+        android:layout_above="@+id/choiceButton2"
+        android:layout_alignLeft="@+id/choiceButton2"
+        android:layout_alignStart="@+id/choiceButton2"
+        style="@style/WhiteButton" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="After a long walk slightly uphill, you end up at the top of a small crater. You look around, and are overjoyed to see your favorite android, %1$s-S1124. It had been lost on a previous mission to Mars! You take it back to your ship and fly back to Earth."
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:lineSpacingMultiplier="1.2" />
+</RelativeLayout>
